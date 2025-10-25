@@ -2,6 +2,7 @@ import streamlit as st
 
 st.title("🎈 Aligh=nment Test")
 
+import streamlit as st
 
 # Configure the page for a cleaner, wider look
 st.set_page_config(layout="wide", page_title="Streamlit Button Layout")
