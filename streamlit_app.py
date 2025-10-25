@@ -2,7 +2,6 @@ import streamlit as st
 
 st.title("🎈 Aligh=nment Test")
 
-import streamlit as st
 
 # Configure the page for a cleaner, wider look
 st.set_page_config(layout="wide", page_title="Streamlit Button Layout")
@@ -13,10 +12,9 @@ st.markdown("---")
 # --- First Row: Start Button and Instruction Text (on the same line) ---
 st.subheader("Row 1: Button and Text on the Same Line")
 
-# Use st.columns to place elements side-by-side. 
-# Ratio [1, 5] gives the button just enough space (1) and the text 
-# the rest of the available width (5), keeping them close and aligned.
-col_start_button, col_start_text = st.columns([1, 5])
+# Updated column ratio to [0.5, 0.5]. This creates two equal-width columns.
+# This is functionally equivalent to st.columns([1, 1]).
+col_start_button, col_start_text = st.columns([0.5, 0.5])
 
 with col_start_button:
     # 1. Start Button
@@ -24,7 +22,6 @@ with col_start_button:
 
 with col_start_text:
     # 2. Instruction Text, using st.text to maintain alignment
-    # Note: Streamlit elements naturally stack vertically, st.columns is necessary.
     st.text("<<- Press Start")
 
 
@@ -43,7 +40,6 @@ with col_test:
 with col_speak:
     # 4. Speak Button
     speak_pressed = st.button("Speak")
-
 
 # --- Placeholder Logic for Demonstration ---
 st.markdown("---")
