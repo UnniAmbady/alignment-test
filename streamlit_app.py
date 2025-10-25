@@ -44,7 +44,7 @@ with col_speak:
     # 4. Speak Button
     speak_pressed = st.button("Speak")
 
-a
+
 # --- Placeholder Logic for Demonstration ---
 st.markdown("---")
 st.subheader("Interaction Output:")
